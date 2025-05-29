@@ -1,0 +1,146 @@
+body{
+    background-color: #EBE4DF;
+    margin: 0;
+    padding: 0;
+}
+
+.full-div{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    height: 100%;
+}
+
+.cafetexte{
+    color: #815F47;
+}
+.clairtexte{
+    color: #EBE4DF;
+}
+.bigtext{
+    font-size: 50px;
+}
+
+/* ---------- NAVBAR -------------*/
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #815F47;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Zone centrale de la navbar */
+.navbar-center {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Liens */
+.nav-link {
+  text-decoration: none;
+  color: #EBE4DF;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+/* Icône centrale */
+.icon {
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/* ---------- FIN NAVBAR -------------*/
+
+
+
+/* ---------- PAGE 1 -------------*/
+
+
+#aroundimg{
+    position: relative;
+    height: 70%;
+}
+
+#descriptionmilou{
+    padding:15px;
+    margin-top: 10%;
+    width: 40%;
+    background-color: #D5B16C;
+    border-radius: 15px;
+}
+#imgemil{
+    margin: 5px;
+    border: solid #D5B16C 6px;
+    border-radius: 15px;
+}
+.relativetext{
+    position: absolute;
+    top: 0;
+    left: 250px;
+    font-size: 50px;
+    width: 200%
+}
+
+/* ---------- FIN PAGE 1 -------------*/
+
+/* ---------- PAGE 2 -------------*/
+
+#sec2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#sec2 > div:nth-child(1){
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+#sec2 > div:nth-child(2){
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+#sec2 > div:nth-child(2) > div{
+    flex-grow: 1;
+    padding: 15px;
+    transition: flex-grow 0.4s ease;
+}
+#sec2 > div:nth-child(2) > div:hover{
+    flex-grow: 2;
+}
+
+
+
+#cafespediv{
+    background-color: #806945;
+}
+#matchadiv{
+    background-color: #70ad66;
+}
+#lattediv{
+    background-color: #dbb970;
+}
+
+
+/* ---------- FIN PAGE 2 -------------*/
+
+
