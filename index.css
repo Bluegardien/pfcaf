@@ -1,20 +1,37 @@
+html, body{
+    scroll-behavior: smooth; /* transition fluide */
+    overflow: hidden;
+}
+
 body{
     background-color: #EBE4DF;
     margin: 0;
     padding: 0;
+
+}
+
+main{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; /* active le scroll snap vertical */
+}
+
+.navbarspace{
+    height: 10vh;
 }
 
 .full-div{
-    height: 100vh;
+    scroll-snap-align: start; /* s'aligne au début de la section */
+    height: 90vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
-img{
-    height: 100%;
+h1, h2 {
+  font-family: 'League Spartan', sans-serif;
 }
+
 
 .cafetexte{
     color: #815F47;
@@ -26,6 +43,16 @@ img{
     font-size: 50px;
 }
 
+
+/* ---------- SCROLL -------------*/
+
+
+
+
+
+/* ---------- FIN SCROLL -------------*/
+
+
 /* ---------- NAVBAR -------------*/
 
 .navbar {
@@ -35,7 +62,7 @@ img{
   background-color: #815F47;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  height: 60px;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,6 +99,7 @@ img{
 /* ---------- PAGE 1 -------------*/
 
 
+
 #aroundimg{
     position: relative;
     height: 70%;
@@ -93,8 +121,11 @@ img{
     position: absolute;
     top: 0;
     left: 250px;
-    font-size: 50px;
+    font-size: 45px;
     width: 200%
+}
+#sec1 img{
+    height: 100%;
 }
 
 /* ---------- FIN PAGE 1 -------------*/
@@ -143,4 +174,40 @@ img{
 
 /* ---------- FIN PAGE 2 -------------*/
 
+/* ---------- PAGE 3 -------------*/
+
+#sec3{
+    display: flex;
+    justify-content: space-around;
+}
+
+#sec3 > div{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+#sec3 > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#iconig{
+  width: 20px;      /* ou 50%, 10rem, etc. */
+  height: auto;      /* garde les proportions */
+  margin: 10px
+}
+
+.descriptionexp{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.descriptionexp h2{
+    width:auto;
+}
+
+
+
+/* ---------- FIN PAGE 3 -------------*/
 
