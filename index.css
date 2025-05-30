@@ -67,16 +67,16 @@ h1, h2 {
   to { opacity: 1; }
 }
 
-/* ---------- SCROLL -------------*/
-
-
-
-
-
-/* ---------- FIN SCROLL -------------*/
-
 
 /* ---------- NAVBAR -------------*/
+
+select{
+    background-color: #815F47;
+    border: solid 2px #EBE4DF ;
+    border-radius: 5px;
+    color: #EBE4DF;
+    font-weight: bold;
+}
 
 .navbar {
   position: fixed;
@@ -184,13 +184,22 @@ h1, h2 {
 
 
 #cafespediv{
-    background-color: #806945;
+    background-image: url("./cafespe.jpeg");
+    background-size: cover;        /* pour remplir tout le conteneur */
+    background-position: center;
+    color: #EBE4DF;
 }
 #matchadiv{
-    background-color: #70ad66;
+    background-image: url("./matcha.jpeg");
+    background-size: cover;        /* pour remplir tout le conteneur */
+    background-position: center;
+    color: #EBE4DF;
 }
 #lattediv{
-    background-color: #dbb970;
+    background-image: url("./latte.jpeg");
+    background-size: cover;        /* pour remplir tout le conteneur */
+    background-position: center;
+    color: #EBE4DF;
 }
 
 
